@@ -135,7 +135,7 @@ return static function (ContainerConfigurator $configurator): void {
     $container->instanceof(ServiceWorkerRuleInterface::class)
         ->tag('spomky_labs_pwa.service_worker_rule')
     ;
-    $container->load('SpomkyLabs\\PwaBundle\\ServiceWorkerRule\\', '../../ServiceWorkerRule/*');
+    $container->load('SpomkyLabs\\PwaBundle\\ServiceWorkerRule\\', '../../ServiceWorkerRule/*');;
 
     $container->instanceof(HasCacheStrategiesInterface::class)
         ->tag('spomky_labs_pwa.cache_strategy')
